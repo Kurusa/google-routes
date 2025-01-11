@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+    <title>Map Visualization from JSON File</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <form id="uploadForm" class="mb-3">
+        <div class="custom-file">
+            <input type="file" id="jsonInput" webkitdirectory directory multiple />
+            <label class="custom-file-label" for="jsonInput">Choose</label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Upload and Visualize</button>
+    </form>
+</div>
+
+<div id="map"></div>
+
+<script src="map.js"></script>
+</body>
+</html>
